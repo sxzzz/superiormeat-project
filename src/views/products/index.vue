@@ -831,7 +831,7 @@ const steak = ref([
     subtitle: 'Steak',
     images: [
       {
-        path: '/assets/images/products/StCerS.jpg',
+        path: '/assets/images/products/stCerS.jpg',
         alt: '',
         title: 'Steak Chuck Eye Roll',
         subtitle: 'Exceptional Marbling with a Luxurious, Buttery Finish',

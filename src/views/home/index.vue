@@ -630,7 +630,7 @@ export default {
           { path: '/assets/images/products/ShSilver.jpg', alt: '' },
           { path: '/assets/images/products/ShSupreme.jpg', alt: '' },
           { path: '/assets/images/products/YaGold.jpg', alt: '' },
-          { path: '/assets/images/products/YaPlatinum.jpg', alt: '' },
+          { path: '/assets/images/products/yaPlatinum.jpg', alt: '' },
           { path: '/assets/images/products/YaSilver.jpg', alt: '' },
           { path: '/assets/images/products/YaSupreme.jpg', alt: '' },
       ]
