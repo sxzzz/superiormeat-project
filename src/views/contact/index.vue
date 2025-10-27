@@ -9,7 +9,7 @@
 
       <!-- 图片 -->
       <img
-          src="/assets/images/contact03.jpg"
+          src="/assets/images/contact04.jpg"
           alt="Contact"
           class="mt-10 w-full  object-cover rounded-2xl "
       />
