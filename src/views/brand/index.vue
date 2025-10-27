@@ -64,61 +64,6 @@
 <!--尊品-->
 
     <div class="mx-auto max-w-2xl px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8">
-      <!-- Details section -->
-      <section v-if="false" aria-labelledby="details-heading">
-        <div class="flex flex-col items-center text-center">
-          <h2 id="details-heading" class="text-4xl  uppercase font-bold tracking-tight bg-gradient-to-r from-yellow-500 via-gray-600 to-amber-400 inline-block text-transparent bg-clip-text">ZUN PIN</h2>
-          <p class="mt-3 max-w-3xl text-xl text-gray-600">
-            We have an exclusive partnership with Oriental Merchant, one of the world’s leading distributors of Asian food products and condiments.
-            Through this collaboration, we developed a dedicated brand <span class=" text-2xl font-bold">ZUN PIN</span> exclusively designed for Oriental Merchant, with products distributed to Asian supermarkets across Australia.
-          </p>
-        </div>
-
-        <div class="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
-          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative">
-            <!-- 默认图片 -->
-            <img
-                src="/assets/images/products/triTip.jpg"
-                alt="Primary image"
-                class="aspect-[3/2] w-full rounded-2xl object-cover transition-all duration-700 ease-in-out group-hover:opacity-0"
-            />
-
-            <!-- hover 图片 -->
-            <img
-                src="/assets/images/parts/BeefTriTip.png"
-                alt="Hover image"
-                class="absolute inset-0 w-full h-full rounded-2xl object-contain opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
-            />
-
-            <p class="mt-8 text-base text-gray-500 relative z-10">
-              Tri Tip
-            </p>
-          </div>
-
-
-          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative">
-            <!-- 默认图片 -->
-            <img
-                src="/assets/images/yakicer.jpg"
-                alt="Primary image"
-                class="aspect-[3/2] w-full rounded-2xl object-cover transition-all duration-700 ease-in-out group-hover:opacity-0"
-            />
-
-            <!-- hover 图片 -->
-            <img
-                src="/assets/images/parts/BeefChuckEyeRoll.png"
-                alt="Hover image"
-                class="absolute inset-0 w-full h-full rounded-2xl object-contain opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
-            />
-
-            <p class="mt-8 text-base text-gray-500 relative z-10">
-              Chuck Eye Roll
-            </p>
-          </div>
-        </div>
-      </section>
-
-
 
       <div class="bg-white">
         <div class="flex flex-col border-b border-gray-200 lg:border-0 ">
@@ -266,7 +211,7 @@
             <!-- 左图 -->
             <div class="w-full h-60 overflow-hidden rounded-lg relative group">
               <img
-                  src="/assets/images/brands/pmo01.JPG"
+                  src="/assets/images/brands/pmo01.jpg"
                   alt="Default"
                   class="w-full h-full object-cover transition-opacity duration-500 ease-in-out group-hover:opacity-0"
               />
