@@ -613,7 +613,7 @@ const platters = ref([
         description: 'For those who desire nothing but the best.\n' +
             'The Yakiniku Platinum Platter showcases premium, hand-selected cuts of beef — each one bursting with umami and tenderness.\n' +
             'It’s not just yakiniku; it’s a platinum-level indulgence.',
-        preview: '/assets/images/products/YaPlatinum.jpg',
+        preview: '/assets/images/products/yaPlatinum.jpg',
         details: [
           { subtitle: 'Quality', text: 'Indulge in the ultimate yakiniku feast – the platinum standard of flavor.' },
           { subtitle: 'Experience', text: 'Generous, mouth-watering, and nothing less than platinum.' },
