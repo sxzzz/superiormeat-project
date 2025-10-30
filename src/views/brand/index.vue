@@ -81,46 +81,26 @@
           <div class="mx-auto mt-6 max-w-3xl sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 gap-8 justify-items-center">
               <img
-                  src="/assets/images/logo/om01.jpg"
+                  src="/assets/images/logo/om02.jpg"
                   alt="Oriental Merchant"
                   class="aspect-[3/4]  w-full max-w-[250px] rounded-xl object-cover transition-transform duration-700 ease-out hover:scale-105 hover:-translate-y-1 shadow-md hover:shadow-xl border border-amber-200"
               />
               <img
-                  src="/assets/images/logo/Zun.png"
+                  src="/assets/images/logo/zun03.jpg"
                   alt="Zun Logo"
-                  class="aspect-[3/4] w-full max-w-[250px] rounded-xl object-cover transition-transform duration-700 ease-out hover:scale-105 hover:-translate-y-1 shadow-md hover:shadow-xl"
+                  class="aspect-[3/4] w-full max-w-[250px] border-amber-200 border rounded-xl object-cover transition-transform duration-700 ease-out hover:scale-105 hover:-translate-y-1 shadow-md hover:shadow-xl"
               />
             </div>
           </div>
 
           <!-- 下方主内容部分 -->
-          <div v-if="false" class="bg-gray-100">
-            <div class="mx-auto max-w-7xl grid lg:grid-cols-2">
-              <!-- 左边文字区域 -->
-              <div class="h-full w-full">
-                <img
-                    src="/assets/images/logo/om01.jpg"
-                    alt="Oriental Merchant"
-                    class="w-full h-full object-cover"
-                />
-              </div>
-
-              <!-- 右边图片区域 -->
-              <div class="h-full w-full">
-                <img
-                    src="/assets/images/logo/Zun.png"
-                    alt="Oriental Merchant"
-                    class="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
         </div>
         <div class="mx-auto mt-8 grid border-t border-amber-200 max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white border border-amber-200 ">
+
+          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white">
             <!-- 默认图片 -->
             <img
-                src="/assets/images/bolarblade.jpg"
+                src="/assets/images/bolar blade01.jpg"
                 alt="Primary image"
                 class="aspect-[3/2] w-full rounded-2xl object-cover   inset-0 transition-opacity duration-500 ease-in-out group-hover:opacity-0"
             />
@@ -132,14 +112,14 @@
                 class="absolute inset-0 w-full h-full rounded-2xl object-contain opacity-0 transition-opacity duration-500 ease-in-out group-hover:opacity-100"
             />
 
-            <p class="ms-4 mt-8 text-base text-gray-500 relative z-10">
+            <p  class="ms-4 mt-8 text-base text-gray-500 relative z-10">
               Shabu Bolar Blade
             </p>
           </div>
-          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white border border-amber-200 ">
+          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white">
             <!-- 默认图片 -->
             <img
-                src="/assets/images/chuckeyeroll.jpg"
+                src="/assets/images/chuck eye roll01.jpg"
                 alt="Primary image"
                 class="aspect-[3/2] w-full rounded-2xl object-cover transition-all duration-700 ease-in-out group-hover:opacity-0"
             />
@@ -155,10 +135,10 @@
               Shabu Chuck Eye Roll
             </p>
           </div>
-          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white border border-amber-200 ">
+          <div class="overflow-hidden rounded-2xl group cursor-pointer transition-transform duration-500 relative mt-8 shadow-sm hover:shadow-xl hover:scale-[1.02] bg-white">
             <!-- 默认图片 -->
             <img
-                src="/assets/images/brisket.jpg"
+                src="/assets/images/brisket01.jpg"
                 alt="Primary image"
                 class="aspect-[3/2] w-full rounded-2xl object-cover transition-all duration-700 ease-in-out group-hover:opacity-0"
             />

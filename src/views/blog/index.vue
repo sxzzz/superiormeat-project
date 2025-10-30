@@ -64,7 +64,7 @@ const featuredPost =
   title: 'Bruce Cheung',
   href: '#',
   description:
-      'Mr. Bruce Cheung, Chair and Co-founder of China International Duty Free (CIDF), visited the Nikushiki Melbourne Central store and met with Mr. Kai Gu to exchange ideas on premium wagyu and future collaboration opportunities.',
+      'Mr Bruce Cheung the Executive Chairman of Pardoo Beef Corporation, played a visit the Nikushiki Melbourne Central store and met with Mr. Kai Gu to exchange ideas on premium wagyu and future collaboration opportunities.',
 
   imageUrl:'/assets/images/blog/brace.jpg',
 

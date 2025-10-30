@@ -1,16 +1,16 @@
 <template>
     <div class="bg-white dark:bg-black relative">
 
-        <div v-if="true" class=" mx-auto max-w-7xl px-6 lg:px-8 mt-6">
-            <h4 class="font-lora text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-yellow-500 via-gray-600 to-amber-400 inline-block text-transparent bg-clip-text ">Superior Meat is Melbourne’s trusted partner for premium Australian and Japanese Wagyu, bridging the gap between world-class producers and discerning culinary professionals.</h4>
+        <div v-if="true" class=" mx-auto max-w-7xl px-6 lg:px-8 mt-2">
+            <h4 class="font-lora text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-gradient-to-r from-yellow-500 via-gray-600 to-amber-400 inline-block text-transparent bg-clip-text ">Superior Meat is Melbourne’s trusted partner for premium Australian and Japanese Wagyu, bridging the gap between world-class producers and discerning culinary professionals.</h4>
         </div>
 
       <!-- Hero -->
-      <div v-if="true" class=" mx-auto max-w-7xl px-6 lg:px-8 mt-6">
+      <div  class=" hidden lg:block mx-auto max-w-7xl px-6 lg:px-8 mt-6">
         <div class="flex flex-col border-b border-gray-200 lg:border-0">
           <div class="relative">
             <div aria-hidden="true" class="absolute hidden h-full w-1/2 bg-gray-900 lg:block" />
-            <div class="relative bg-gray-100 lg:bg-transparent py-5">
+            <div class="relative bg-blue-900 lg:bg-transparent py-5">
               <!-- 左侧文字 -->
               <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:px-8">
                 <div class="mx-auto max-w-2xl py-36 lg:col-span-1">
@@ -67,6 +67,14 @@
           </div>
         </div>
       </div>
+
+      <div  class="mx-auto max-w-7xl px-6 lg:px-8 lg:hidden mt-6">
+        <div class="relative group aspect-square scale-90 overflow-hidden rounded-lg">
+          <img src="/assets/images/brands/slider03.jpg" alt="" class="rounded-lg w-full h-full object-cover" />
+          <img src="/assets/images/banner/banner07.jpg" alt="" class="rounded-lg  absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0 group-hover:opacity-100" />
+        </div>
+      </div>
+      
 
       <!--html布局的拖拽暂时不用-->
       <div v-if="false" id="baContainer1" class="relative w-[1220px] mx-auto h-[600px] overflow-hidden mt-6 border-cyan-500 border rounded-2xl">
@@ -348,7 +356,7 @@
                 <!-- 内容部分 -->
                 <div class="mt-5">
                   <h2 class="text-sm font-semibold leading-8">{{ item.date }}</h2>
-                  <p class="mt-2 text-base lg:text-2xl xl:text-3xl font-bold tracking-tight">
+                  <p class="mt-2 text-sm lg:text-2xl xl:text-3xl font-bold tracking-tight">
                     {{ item.title }}
                   </p>
                 </div>
@@ -364,7 +372,7 @@
                   <router-link :to="`/newsdetail/${item.id}`">
                     <button
                         type="button"
-                        class="  rounded bg-pink-500 px-6 py-2 text-lg font-medium text-white dark:text-gray-300 shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                        class=" rounded bg-pink-500 px-2 lg:px-6 lg:text-base py-2 text-xs font-medium text-white dark:text-gray-300 shadow-sm hover:bg-rose-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                     >
                       See More
                     </button>
@@ -423,13 +431,13 @@
         </div>
         <p class="text-base  text-center mb-10 mx-auto  ">Our loyal customers’ feedback</p>
 
-        <div id="row1" class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden">
+        <div v-if="false" id="row1" class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden">
           <div class="flex animate-marquee-right z-30">
             <!-- 第一份内容 -->
             <div class="flex" v-for="(group, groupIndex) in 2" :key="'group-' + groupIndex">
               <div class="mx-3 mb-6" v-for="(card, index) in cards" :key="'card-' + groupIndex + '-' + index">
                 <div
-                    class="p-6 rounded-2xl border border-gray-200 shadow-lg w-[350px] min-h-[300px] flex flex-col justify-between"
+                    class="p-6 rounded-2xl border border-gray-200 shadow-lg w-[350px] h-[300px] flex flex-col justify-between"
                     :class="card.gradient">
                   <div>
                     <div class="flex flex-row items-center justify-start">
@@ -450,7 +458,78 @@
             </div>
           </div>
         </div>
-        <div id="row2" class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden">
+        <div
+            id="row1"
+            class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden"
+        >
+          <div class="flex animate-marquee-right z-30">
+            <!-- 第一份内容 -->
+            <div
+                class="flex"
+                v-for="(group, groupIndex) in 2"
+                :key="'group-' + groupIndex"
+            >
+              <div
+                  class="mx-3 mb-6 flex-shrink-0"
+                  v-for="(card, index) in cards"
+                  :key="'card-' + groupIndex + '-' + index"
+              >
+                <div
+                    class="p-5 sm:p-6 rounded-2xl border border-gray-200 shadow-lg
+                 w-[260px] sm:w-[300px] md:w-[320px] lg:w-[350px]
+                 h-[260px] sm:h-[280px] md:h-[300px]
+                 flex flex-col justify-between overflow-hidden transition-transform duration-500 hover:scale-105"
+                    :class="card.gradient"
+                >
+                  <!-- 内容 -->
+                  <div>
+                    <!-- 星星行 -->
+                    <div class="flex flex-row items-center justify-start">
+                      <svg
+                          v-for="i in 5"
+                          :key="i"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          class="sm:w-5 sm:h-5"
+                      >
+                        <path
+                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                            fill="#FF6D42"
+                        />
+                      </svg>
+                    </div>
+
+                    <!-- 标题 -->
+                    <h5
+                        class="font-bold text-lg sm:text-xl md:text-2xl dark:text-white mt-3 line-clamp-1"
+                    >
+                      {{ card.title }}
+                    </h5>
+
+                    <!-- 描述文字 -->
+                    <p
+                        class="text-sm sm:text-base font-normal text-gray-500 dark:text-white mt-4 line-clamp-3"
+                    >
+                      {{ card.description }}
+                    </p>
+                  </div>
+
+                  <!-- 作者 -->
+                  <div>
+            <span
+                class="text-base sm:text-lg dark:text-white font-medium italic"
+            >{{ card.author }}</span
+            >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-if="false" id="row2" class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden">
           <div class="flex animate-marquee-left z-30">
             <!-- 第一份内容 -->
             <div class="flex" v-for="(group, groupIndex) in 2" :key="'group-' + groupIndex">
@@ -471,6 +550,76 @@
                   </div>
                   <div>
                     <span class="text-lg font-medium dark:text-white italic">{{ card.author }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+            id="row1"
+            class="relative flex overflow-x-scroll no-scrollbar md:overflow-x-hidden overflow-y-hidden"
+        >
+          <div class="flex animate-marquee-left z-30">
+            <!-- 第一份内容 -->
+            <div
+                class="flex"
+                v-for="(group, groupIndex) in 2"
+                :key="'group-' + groupIndex"
+            >
+              <div
+                  class="mx-3 mb-6 flex-shrink-0"
+                  v-for="(card, index) in cards"
+                  :key="'card-' + groupIndex + '-' + index"
+              >
+                <div
+                    class="p-5 sm:p-6 rounded-2xl border border-gray-200 shadow-lg
+                 w-[260px] sm:w-[300px] md:w-[320px] lg:w-[350px]
+                 h-[260px] sm:h-[280px] md:h-[300px]
+                 flex flex-col justify-between overflow-hidden transition-transform duration-500 hover:scale-105"
+                    :class="card.gradient"
+                >
+                  <!-- 内容 -->
+                  <div>
+                    <!-- 星星行 -->
+                    <div class="flex flex-row items-center justify-start">
+                      <svg
+                          v-for="i in 5"
+                          :key="i"
+                          width="18"
+                          height="18"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          class="sm:w-5 sm:h-5"
+                      >
+                        <path
+                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
+                            fill="#FF6D42"
+                        />
+                      </svg>
+                    </div>
+
+                    <!-- 标题 -->
+                    <h5
+                        class="font-bold text-lg sm:text-xl md:text-2xl dark:text-white mt-3 line-clamp-1"
+                    >
+                      {{ card.title }}
+                    </h5>
+
+                    <!-- 描述文字 -->
+                    <p
+                        class="text-sm sm:text-base font-normal text-gray-500 dark:text-white mt-4 line-clamp-3"
+                    >
+                      {{ card.description }}
+                    </p>
+                  </div>
+
+                  <!-- 作者 -->
+                  <div>
+            <span
+                class="text-base sm:text-lg dark:text-white font-medium italic"
+            >{{ card.author }}</span
+            >
                   </div>
                 </div>
               </div>
@@ -668,7 +817,7 @@ export default {
         {
           id: "24062024",
           date: "24/06/2024",
-          title: "NIKUSHIKI MELBOURNE CENTRAL",
+          title: "NIKUSHIKI CBD",
           img: "/assets/images/cbdStore.png",
           reverse: true,
         },
@@ -846,7 +995,7 @@ export default {
     --progress: 0;
     position: absolute;
     left: 0;
-    top: 0px;
+    top: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
@@ -856,6 +1005,43 @@ export default {
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
+}
+
+@keyframes barPulse {
+  0%, 100% {
+    height: 0.5rem;
+  }
+  50% {
+    height: 1.5rem;
+  }
+}
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-left {
+  display: flex;
+  animation: marquee-left 60s linear infinite;
+}
+
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee-right {
+  display: flex;
+  animation: marquee-right 60s linear infinite;
 }
 
 </style>
