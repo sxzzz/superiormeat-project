@@ -3,7 +3,7 @@
 <template>
   <div class="bg-white dark:bg-black">
 
-    <!-- Yakiniki -->
+    <!-- Yakiniku -->
     <div
         v-for="galleryItem in yakiniku"
         :key="galleryItem.subtitle"
@@ -130,7 +130,7 @@
       </div>
     </div>
 
-    <!-- steak -->
+    <!-- Steak -->
     <div
         v-for="galleryItem in steak"
         :key="galleryItem.subtitle"
@@ -268,8 +268,8 @@
 
     <!-- platter弹出窗口 -->
     <transition name="fade">
-      <div v-if="isPlatterModalOpen" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
-        <div class="bg-white rounded-2xl shadow-2xl max-w-5xl w-full mx-4 p-6 relative">
+      <div v-if="isPlatterModalOpen" @click.self="closePlatterModal" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">
+        <div class="bg-white rounded-2xl shadow-2xl w-full sm:w-[500px] md:w-[600px] lg:w-[800px] max-h-[90vh] overflow-y-auto mx-4 p-6 relative">
           <!-- 关闭按钮 -->
           <button
               class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl"
@@ -310,101 +310,12 @@
         </div>
       </div>
     </transition>
-    <!-- yakiniku弹出拖拽窗口暂时不用 -->
-<!--    <transition name="fade">-->
-<!--      <div v-if="isYakinikuModalOpen" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50">-->
-<!--        <div class="relative w-full max-w-7xl mx-4">-->
-<!--          &lt;!&ndash; 关闭按钮 &ndash;&gt;-->
-<!--          <button-->
-<!--              class="absolute top-2 right-[85px] z-50 text-white bg-cyan-300 bg-opacity-30 rounded-full w-5 h-5 flex items-center justify-center hover:bg-black hover:bg-opacity-50 transition"-->
-<!--              @click="closeYakinikuModal"-->
-<!--          >-->
-<!--            &times;-->
-<!--          </button>-->
-
-<!--          <HtmlCompareSlider :width="selectedYakinikuImage?.sliderWidth || 1200" :height="selectedYakinikuImage?.sliderHeight || 600">-->
-<!--            &lt;!&ndash; before &ndash;&gt;-->
-<!--            <template #before>-->
-<!--              <div class="w-full h-full flex flex-col items-center justify-center px-8 py-12 space-y-6 bg-white text-gray-900">-->
-<!--&lt;!&ndash;                <h1 class="text-4xl font-extrabold text-pink-600">{{ selectedYakinikuImage?.title }} - Before</h1>&ndash;&gt;-->
-<!--&lt;!&ndash;                <p class="text-lg max-w-xl text-center">{{ selectedYakinikuImage?.description }}</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="bg-gray-100 border border-gray-300 rounded-xl shadow p-6 space-y-2 w-full max-w-2xl">&ndash;&gt;-->
-<!--&lt;!&ndash;                  <h2 class="text-xl font-bold text-gray-700">Details</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <ul class="list-disc list-inside text-sm text-gray-700">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li v-for="(detail, i) in selectedYakinikuImage?.details" :key="i">{{ detail.subtitle }}: {{ detail.text }}</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                  </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-
-<!--                <h1 class="text-5xl font-extrabold text-pink-600">-->
-<!--                  ☀️ {{ selectedYakinikuImage?.titleBefore }}  Gold Cut-->
-<!--                </h1>-->
-<!--                <p class="text-lg max-w-xl leading-relaxed text-center">-->
-<!--                  {{ selectedYakinikuImage?.descriptionBefore }}-->
-<!--                </p>-->
-
-<!--                <div class="bg-gray-100 border border-gray-300 rounded-xl shadow p-6 space-y-3 max-w-2xl ">-->
-<!--                  <h2 class="text-xl font-bold text-gray-700">🥩 Product Details</h2>-->
-<!--                  <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">-->
-<!--                    <li-->
-<!--                        v-for="(detail, i) in selectedYakinikuImage?.detailsBefore"-->
-<!--                        :key="'before-'+i"-->
-<!--                    >-->
-<!--                      {{ detail.subtitle }}: {{ detail.text }}-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-
-<!--                <div class="mt-4 text-2xl font-bold text-red-600">-->
-<!--                  💰 Price: {{ selectedYakinikuImage?.priceBefore || '$189 / kg' }}-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </template>-->
-
-<!--            &lt;!&ndash; after &ndash;&gt;-->
-<!--            <template #after>-->
-<!--              <div class="w-full h-full flex flex-col items-center justify-center px-8 py-12 space-y-6 bg-gray-900 text-gray-200">-->
-<!--&lt;!&ndash;                <h1 class="text-4xl font-extrabold text-red-400">{{ selectedYakinikuImage?.title }} - After</h1>&ndash;&gt;-->
-<!--&lt;!&ndash;                <p class="text-lg max-w-xl text-center">{{ selectedYakinikuImage?.description }}</p>&ndash;&gt;-->
-<!--&lt;!&ndash;                <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-2 w-full max-w-2xl">&ndash;&gt;-->
-<!--&lt;!&ndash;                  <h2 class="text-xl font-bold text-yellow-400">Highlights</h2>&ndash;&gt;-->
-<!--&lt;!&ndash;                  <ul class="list-disc list-inside text-sm text-gray-300">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <li v-for="(detail, i) in selectedYakinikuImage?.details" :key="i">{{ detail.subtitle }}: {{ detail.text }}</li>&ndash;&gt;-->
-<!--&lt;!&ndash;                  </ul>&ndash;&gt;-->
-<!--&lt;!&ndash;                </div>&ndash;&gt;-->
-<!--                <h1 class="text-5xl font-extrabold text-red-400">-->
-<!--                  🌙 {{ selectedYakinikuImage?.titleAfter }}  Platinum Cut-->
-<!--                </h1>-->
-<!--                <p class="text-lg max-w-xl leading-relaxed text-center">-->
-<!--                  {{ selectedYakinikuImage?.descriptionAfter }}-->
-<!--                </p>-->
-<!--                <div class="bg-gray-800 rounded-xl shadow-lg p-6 space-y-3 max-w-2xl ">-->
-<!--                  <h2 class="text-xl font-bold text-yellow-400">✨ Key Highlights</h2>-->
-<!--                  <ul class="list-disc list-inside space-y-1 text-sm text-gray-300">-->
-<!--                    <li-->
-<!--                        v-for="(detail, i) in selectedYakinikuImage?.detailsAfter"-->
-<!--                        :key="'after-'+i"-->
-<!--                    >-->
-<!--                      {{ detail.subtitle }}: {{ detail.text }}-->
-<!--                    </li>-->
-<!--                  </ul>-->
-<!--                </div>-->
-
-<!--                <div class="mt-4 text-2xl font-bold text-green-400">-->
-<!--                  💰 Price: {{ selectedYakinikuImage?.priceAfter || '$329 / kg' }}-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </template>-->
-<!--          </HtmlCompareSlider>-->
-
-<!--        </div>-->
-<!--      </div>-->
-<!--    </transition>-->
-
     <!-- yakiniku弹出窗口 -->
     <transition name="fade">
       <div
           v-if="isYakinikuModalOpen"
           class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          @click.self="closeYakinikuModal"
       >
         <!-- 弹窗主体 -->
         <div class="relative w-full max-w-7xl mx-4 bg-white rounded-2xl overflow-hidden shadow-2xl">
@@ -453,12 +364,12 @@
         </div>
       </div>
     </transition>
-
     <!-- Shabu弹出窗口 -->
     <transition name="fade">
       <div
           v-if="isShabuModalOpen"
           class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          @click.self="closeShabuModal"
       >
         <!-- 弹窗主体 -->
         <div class="relative w-full max-w-7xl mx-4 bg-white rounded-2xl overflow-hidden shadow-2xl">
@@ -512,6 +423,7 @@
       <div
           v-if="isSteakModalOpen"
           class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
+          @click.self="closeSteakModal"
       >
         <!-- 弹窗主体 -->
         <div class="relative w-full max-w-7xl mx-4 bg-white rounded-2xl overflow-hidden shadow-2xl">
@@ -561,16 +473,11 @@
       </div>
     </transition>
 
-
-
-
-
   </div>
 </template>
 
 <script setup>
 import { ref,onMounted } from 'vue';
-import HtmlCompareSlider from '/src/components/HtmlCompareSlider/index.vue'
 
 onMounted(() => {
   //fetchImages()

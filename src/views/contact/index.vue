@@ -1,6 +1,6 @@
 <template>
 
-  <div class="bg-white py-16">
+  <div class="bg-white mt-4 ">
     <div class="mx-auto max-w-5xl px-6 lg:px-8 text-center">
       <!-- 标题 -->
       <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
@@ -76,43 +76,12 @@ const jobOpenings = [
     href: '#',
     location: 'G-121 Chadstone Shopping Centre, Dandenong Road, Malvern East VIC',
     email: '',
-    tel: ' (03) xxxx xxxx',
+    tel: 'info@smeat.com.au',
   },
 ]
 
 
-const faqs = [
-  {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet",
-    answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet",
-  },
-  {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-    answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-  },
-  {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-    answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-  },
-  {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-    answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet",
-  },
-  {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet",
-    answer:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-  },
-  {
-    question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet',
-    answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet",
-  },
-]
+
 
 
 
