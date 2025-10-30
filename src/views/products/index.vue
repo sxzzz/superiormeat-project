@@ -330,14 +330,14 @@
           <!-- 内容区 -->
           <div class="p-8 text-center">
             <!-- 主标题 -->
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">{{selectedYakinikuImage?.title}}</h2>
+            <h2 class="text-xl lg:text-3xl font-bold text-gray-900 mb-2">{{selectedYakinikuImage?.title}}</h2>
 
             <!-- 副标题 -->
-            <h3 class="text-xl text-gray-700 mb-4 font-medium">{{ selectedYakinikuImage?.subtitle }}</h3>
+            <h3 class="text-base lg:text-xl text-gray-700 mb-4 font-medium">{{ selectedYakinikuImage?.subtitle }}</h3>
 
             <!-- 描述 -->
             <div class="flex flex-col md:flex-row items-start justify-center gap-8 max-w-5xl mx-auto text-left md:text-left mb-8">
-              <p class="text-gray-600  leading-relaxed">
+              <p class="text-gray-600  leading-relaxed text-sm">
                 {{ selectedYakinikuImage?.description }}
               </p>
             </div>
@@ -349,14 +349,14 @@
                     :src="selectedYakinikuImage.path"
 
                     alt="Shabu Beef Left"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div class="overflow-hidden rounded-xl shadow border-amber-500 border  ">
                 <img
                     :src="selectedYakinikuImage.preview"
                     alt="Shabu Beef Right"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
@@ -384,10 +384,10 @@
           <!-- 内容区 -->
           <div class="p-8 text-center">
             <!-- 主标题 -->
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">{{selectedShabuImage?.title}}</h2>
+            <h2 class="text-xl lg:text-3xl font-bold text-gray-900 mb-2">{{selectedShabuImage?.title}}</h2>
 
             <!-- 副标题 -->
-            <h3 class="text-xl text-gray-700 mb-4 font-medium">{{ selectedShabuImage?.subtitle }}</h3>
+            <h3 class="text-base lg:text-xl text-gray-700 mb-4 font-medium">{{ selectedShabuImage?.subtitle }}</h3>
 
             <!-- 描述 -->
             <div class="flex flex-col md:flex-row items-start justify-center gap-8 max-w-5xl mx-auto text-left md:text-left mb-8">
@@ -403,14 +403,14 @@
                     :src="selectedShabuImage.path"
 
                     alt="Shabu Beef Left"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div class="overflow-hidden rounded-xl shadow border-amber-500 border  ">
                 <img
                     :src="selectedShabuImage.preview"
                     alt="Shabu Beef Right"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
@@ -438,10 +438,10 @@
           <!-- 内容区 -->
           <div class="p-8 text-center">
             <!-- 主标题 -->
-            <h2 class="text-3xl font-bold text-gray-900 mb-2">{{selectedSteakImage?.title}}</h2>
+            <h2 class="text-xl lg:text-3xl font-bold text-gray-900 mb-2">{{selectedSteakImage?.title}}</h2>
 
             <!-- 副标题 -->
-            <h3 class="text-xl text-gray-700 mb-4 font-medium">{{ selectedSteakImage?.subtitle }}</h3>
+            <h3 class="text-base lg:text-xl text-gray-700 mb-4 font-medium">{{ selectedSteakImage?.subtitle }}</h3>
 
             <!-- 描述 -->
             <div class="flex flex-col md:flex-row items-start justify-center gap-8 max-w-5xl mx-auto text-left md:text-left mb-8">
@@ -457,14 +457,14 @@
                     :src="selectedSteakImage.path"
 
                     alt="Shabu Beef Left"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div class="overflow-hidden rounded-xl shadow border-amber-500 border  ">
                 <img
                     :src="selectedSteakImage.preview"
                     alt="Shabu Beef Right"
-                    class="w-full h-[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
+                    class="w-full h-[200px] sm:[300px] md:h-[450px] lg:h-[500px] object-contain hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </div>
